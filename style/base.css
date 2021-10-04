@@ -415,37 +415,37 @@ header > a {
           justify-content: center;
 }
 
-header > a > svg {
+header > a > .paw {
   -webkit-animation: paw 2s ease alternate infinite;
           animation: paw 2s ease alternate infinite;
   width: 70px;
   margin-top: 2rem;
 }
 
-header > a > svg:hover, header > a > svg:active {
+header > a > .paw:hover, header > a > .paw:active {
   -webkit-animation: paw 2s ease alternate infinite;
           animation: paw 2s ease alternate infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
 
-header > a > svg > .st0 {
+header > a > .paw > .st0 {
   fill: #4A5959;
 }
 
-header > a > svg > .st1 {
+header > a > .paw > .st1 {
   fill: #EAE1B9;
 }
 
-header > a > svg > .st2 {
+header > a > .paw > .st2 {
   fill: #404A4A;
 }
 
-header > a > svg > .st3 {
+header > a > .paw > .st3 {
   fill: #FE7FA6;
 }
 
-header > a > svg > .st4 {
+header > a > .paw > .st4 {
   fill: #FDA4B0;
 }
 
@@ -462,34 +462,35 @@ header .header {
   overflow: hidden;
 }
 
-header .header > svg {
+header .header > .cat {
   position: relative;
-  -webkit-animation: cat 1s ease-in-out forwards;
-          animation: cat 1s ease-in-out forwards;
+  -webkit-animation: cat 1.2s ease-in-out .5s forwards;
+          animation: cat 1.2s ease-in-out .5s forwards;
+  top: 150%;
   width: 50vh;
 }
 
-header .header > svg > .st0 {
+header .header > .cat > .st0 {
   fill: #70727C;
 }
 
-header .header > svg > .st1 {
+header .header > .cat > .st1 {
   fill: #5B5E66;
 }
 
-header .header > svg > .st2 {
+header .header > .cat > .st2 {
   fill: #848591;
 }
 
-header .header > svg > .st3 {
+header .header > .cat > .st3 {
   fill: #25212C;
 }
 
-header .header > svg > .st4 {
+header .header > .cat > .st4 {
   fill: #DDA03D;
 }
 
-header .header > svg > .st5 {
+header .header > .cat > .st5 {
   fill: #FEFEFE;
 }
 
@@ -498,8 +499,8 @@ header main {
   text-align: center;
   opacity: 0;
   color: #9E9E9E;
-  -webkit-animation: fontAppear 1.5s ease-out 1s forwards;
-          animation: fontAppear 1.5s ease-out 1s forwards;
+  -webkit-animation: fontAppear 1.5s ease-out .2s forwards;
+          animation: fontAppear 1.5s ease-out .2s forwards;
   max-width: 1500px;
 }
 
