@@ -4,8 +4,7 @@ section {
     align-items: center;
     flex-direction: row;
     max-width: $page-width;
-    min-height: 100vh;
-    padding: 0 20vw;
+    padding: 7em 20vw 10em 20vw;
 
     a {
         width: 25%;
@@ -53,7 +52,7 @@ section {
 @media only screen and (max-width: 1100px) {
     section {
         min-height: auto;
-        padding: 8rem 10%;
+        padding: 7em 10% 10em 10%;
     }
 }
 

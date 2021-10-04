@@ -631,8 +631,7 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 1500px;
-  min-height: 100vh;
-  padding: 0 20vw;
+  padding: 7em 20vw 10em 20vw;
 }
 
 section a {
@@ -674,7 +673,7 @@ section a h2 {
 @media only screen and (max-width: 1100px) {
   section {
     min-height: auto;
-    padding: 8rem 10%;
+    padding: 7em 10% 10em 10%;
   }
 }
 
