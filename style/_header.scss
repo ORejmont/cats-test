@@ -7,7 +7,7 @@ header {
         display: flex;
         justify-content: center;
 
-        > svg {
+        > .paw {
             animation: paw 2s ease alternate infinite;
             width: 70px;
             margin-top: 2rem;
@@ -34,9 +34,10 @@ header {
         width: 100%;
         overflow: hidden;
 
-        > svg {
+        > .cat {
             position: relative;
-            animation: cat 1s ease-in-out forwards;
+            animation: cat 1.2s ease-in-out .5s forwards;
+            top: 150%;
             width: 50vh;
 
             > .st0{fill:#70727C;}
@@ -53,7 +54,7 @@ header {
         text-align: center;
         opacity: 0;
         color: $color-grey-light;
-        animation: fontAppear 1.5s ease-out 1s forwards;
+        animation: fontAppear 1.5s ease-out .2s forwards;
         max-width: $page-width;
 
         h1 {
