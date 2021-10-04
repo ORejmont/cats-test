@@ -1,0 +1,51 @@
+@keyframes cat {
+    0% {
+        top: 150%;
+    }
+
+    70% {
+        top: 25%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+@keyframes fontAppear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes paw {
+    0% {
+        transform: translateY(10px);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes selection_text {
+    0% {
+        transform: scale(1.03);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

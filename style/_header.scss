@@ -1,0 +1,202 @@
+header {
+    background-color: #FFF;
+    min-height: 100vh;
+    width: 100%;
+
+    > a {
+        display: flex;
+        justify-content: center;
+
+        > svg {
+            animation: paw 2s ease alternate infinite;
+            width: 70px;
+            margin-top: 2rem;
+
+            &:hover,
+            &:active {
+                animation: paw 2s ease alternate infinite;
+                animation-play-state: paused;
+            }
+    
+            > .st0{fill:#4A5959;}
+            > .st1{fill:#EAE1B9;}
+            > .st2{fill:#404A4A;}
+            > .st3{fill:#FE7FA6;}
+            > .st4{fill:#FDA4B0;}
+        }
+    }
+
+    .header {
+        background-color: $color-primary;
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+        width: 100%;
+        overflow: hidden;
+
+        > svg {
+            position: relative;
+            animation: cat 1s ease-in-out forwards;
+            width: 50vh;
+
+            > .st0{fill:#70727C;}
+            > .st1{fill:#5B5E66;}
+            > .st2{fill:#848591;}
+            > .st3{fill:#25212C;}
+            > .st4{fill:#DDA03D;}
+            > .st5{fill:#FEFEFE;}
+        }
+    }
+
+    main {
+        margin: 4.5rem auto 0 auto;
+        text-align: center;
+        opacity: 0;
+        color: $color-grey-light;
+        animation: fontAppear 1.5s ease-out 1s forwards;
+        max-width: $page-width;
+
+        h1 {
+            text-transform: uppercase;
+            position: relative;
+            
+            &:nth-child(1) {
+                font-weight: 100;
+                font-family: AmaticSC;
+                font-size: 3.5em;
+                letter-spacing: .1em;
+            }
+
+            &:nth-child(2) {
+                color: $color-grey;
+                font-family: 'Arial', sans-serif;
+                letter-spacing: .1em;
+                font-weight: bolder;
+                font-size: 3.2em;
+                top: -40px;
+            }
+        }
+
+        p {
+            font-family: AmaticSC;
+            font-size: 2.1rem;
+            margin-top: -20px;
+            padding: $page-padding;
+
+            a {
+                font-family: AmaticSC;
+                font-size: 2.1rem;
+                color: $color-primary;
+                text-decoration: underline;
+                
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    header {
+        h1 {
+            &:nth-child(1) {
+                font-size: 3.3em;
+            }
+
+            &:nth-child(2) {
+                font-size: 3em;
+            }
+        }
+
+        main {
+            p {
+                font-size: 2rem;
+                margin-top: -15px;
+    
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        main {
+            p {
+                font-size: 2rem;
+                margin-top: -15px;
+    
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        main {
+            h1 {
+                text-transform: uppercase;
+                position: relative;
+                
+                &:nth-child(1) {
+                    font-weight: 100;
+                    font-family: AmaticSC;
+                    font-size: 2.8em;
+                    letter-spacing: .1em;
+                }
+    
+                &:nth-child(2) {
+                    $color-grey: #3D3D3D;
+                    font-family: 'Arial', sans-serif;
+                    letter-spacing: .1em;
+                    font-weight: bolder;
+                    font-size: 2.5em;
+                    top: -30px;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-top: -15px;
+    
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    header {
+        main {
+            h1 {
+                text-transform: uppercase;
+                position: relative;
+                
+                &:nth-child(1) {
+                    font-size: 2.5em;
+                }
+    
+                &:nth-child(2) {
+                    font-size: 2.2em;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-top: -15px;
+    
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
