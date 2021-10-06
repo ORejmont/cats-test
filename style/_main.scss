@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-body {
-    display:flex;
-    flex-direction:column;
+html {
+    position: relative;
+    min-height: 100%;
 }

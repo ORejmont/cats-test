@@ -118,14 +118,9 @@
   scroll-behavior: smooth;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 /* SCROLL SHADOW */
@@ -287,7 +282,7 @@ nav ul li a {
 }
 
 .flags img {
-  height: 25px;
+  height: 22px;
   margin-left: 10px;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
@@ -307,10 +302,10 @@ nav ul li a {
     font-size: 2em;
   }
   .flags {
-    top: 9px;
+    top: 15px;
   }
   .flags img {
-    height: 20px;
+    height: 25px;
   }
 }
 
@@ -704,7 +699,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  margin-top: -50px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: #3D3D3D;

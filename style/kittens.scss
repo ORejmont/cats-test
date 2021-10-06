@@ -1,0 +1,171 @@
+@import 'global';       // global (variables, animations...)
+
+header {
+    min-height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding: 0 20vw 0 20vw;
+    padding-top: -5vh;
+    padding-bottom: 80px;
+
+    h1 {
+        text-transform: uppercase;
+        font-family: AmaticSC;
+        font-weight: 100;
+        color: $color-black;
+        font-size: 7vw;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: $page-width;
+        box-sizing: border-box;
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            position: relative;
+
+            &:hover div,
+            &:active div {
+                border-color: $color-primary;
+                background-color: rgba(0, 0, 0, 0);
+            }
+
+            &:hover div p,
+            &:active div p {
+                transform: scale(1.1);
+            }
+    
+            &:first-child {
+                margin-left: 0;
+            }
+    
+            &:last-child {
+                margin-right: 0;
+            }
+    
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+    
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 5px $color-black solid;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, .6);
+                transition: all 0.3s ease;
+    
+                p {
+                    text-transform: uppercase;
+                    font-family: AmaticSC;
+                    color: #fff;
+                    font-size: 6vw;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* NOTEBOOK */
+@media only screen and (max-width: 1280px) {
+    main {
+        display: block;
+        height: auto;
+        padding-top: 80px;
+    
+        h1 {
+            text-transform: uppercase;
+            font-family: AmaticSC;
+            font-weight: 100;
+            color: $color-black;
+            font-size: 9vw;
+        }
+    
+        div {
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            a {
+                margin: 10px;
+                width: 40%;
+
+                &:first-child {
+                    margin-left: 10px;
+                }
+        
+                &:last-child {
+                    margin-right: 10px;
+                }
+        
+                div {
+                    border: 5px $color-black solid;
+                    
+                    p {
+                        font-size: 9vw;
+                    }
+                }
+            }
+        }
+    }
+}
+/* NOTEBOOK */
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: block;
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        height: auto;
+        display: block;
+
+        h1 {
+            text-transform: uppercase;
+            font-family: AmaticSC;
+            font-weight: 100;
+            color: $color-black;
+            font-size: 25vw;
+        }
+
+        div {
+            a {
+                width: 100%;
+
+                div {
+                    p {
+                        font-size: 25vw;
+                    }
+                }
+            }
+        }
+    }
+}

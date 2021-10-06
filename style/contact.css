@@ -110,6 +110,18 @@
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +146,7 @@ header main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 60px;
-  margin-bottom: 10vh;
+  padding-bottom: 70px;
   opacity: 100%;
   -webkit-animation: none;
           animation: none;
@@ -164,7 +176,8 @@ header main a:hover {
 }
 
 footer {
-  margin-top: -50px;
+  position: absolute;
+  bottom: 0;
 }
 
 @media only screen and (max-height: 550px) {
